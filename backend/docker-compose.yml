@@ -1,0 +1,11 @@
+services:
+  database:
+    image: 'mysql:8.0'
+    restart: always
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./docker/db:/var/lib/mysql"
+    environment:
+        MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+        MYSQL_DATABASE: ${DB_DATABASE}
