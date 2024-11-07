@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .form-control:not(:last-child){
+        @apply mb-5;
+
+    }
+    
+    .form {
+        @apply bg-slate-400 h-80 w-80 p-4 rounded;
+    }
+
+    body {
+        @apply bg-slate-700
+    }
+
+    .btn-success {
+        @apply  bg-green-400  ;
+    }
+
+    .btn {
+        @apply block w-32 rounded font-semibold text-white py-3;
+    }
+}
+
